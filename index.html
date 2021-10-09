@@ -88,11 +88,11 @@
               this.projects = result.map(e => ({
                 title: e.repo,
                 subtitle: e.description,
-                url: `https://github.com/${e.owner}/${e.repo}`,
+                url: e.link,
                 stars: e.stars,
                 forks: e.forks,
                 lang: e.language,
-                langColor: 'orange',
+                langColor: e.languageColor,
               }));
             });
         },

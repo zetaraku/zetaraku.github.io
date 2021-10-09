@@ -82,7 +82,7 @@
           projects: [],
         },
         created() {
-          fetch('https://gh-pinned-repos.now.sh/?username=zetaraku')
+          fetch('https://gh-pinned-repos.egoist.sh/?username=zetaraku')
             .then(response => response.json())
             .then(result => {
               this.projects = result.map(e => ({
